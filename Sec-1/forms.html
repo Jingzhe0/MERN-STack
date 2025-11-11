@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    
+    <h2>STUDENT ADMISSION FORM</h2>
+
+    <form action="">
+
+        <label for="">Student Name</label>
+        <input type="text" required minlength="4" maxlength="12">
+        <br>
+        <br>
+        <label for="stu-email">Student Email</label>
+        <input id="stu-email" type="email" required>     
+        <!-- jo id hogi ussi ko label 'for' lenge     -->
+        <br>
+        <br>
+
+        <label for="">Date of Birth</label>
+        <input type="date" required >
+
+        <br>
+        <br>
+
+        <label for="address">Address</label>
+        <textarea id="address" rows="3" cols="6"></textarea>
+        <br>
+        <br>
+
+        <label for="">Select Course</label>
+        <select name="" id="">
+            <option value="">MERN STACK</option>
+            <option value="">DATA SCIENCE</option>
+            <option value="">ARTIfICIAL INTELLIGENCE</option>
+            
+            <!-- alt+shift+down for copying -->
+             <!-- ctrl+d select all the values of same Name
+            alt+hold gives u multiple cursor -->
+        </select>
+
+        <br><br>
+
+        <label for="">College</label>
+        <input type="text" list="college">
+
+        <datalist id="college">
+            <option value="" >BBD</option>
+            <option >AMITY</option>
+            <option >DGI</option>
+            <option >SRM</option>
+        </datalist>
+        <br><br>
+
+        <button>Submit</button>
+
+    </form>
+
+
+</body>
+</html>
