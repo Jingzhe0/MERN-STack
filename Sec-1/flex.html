@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+
+
+.child{
+    padding: 30px;
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+
+.parent{
+    display: flex;
+    /* flex-direction: column-reverse; */
+
+    justify-content: flex-start;     
+    /* for primary axis (x-axis) */
+
+
+    align-items: center;
+    /* for secondary axis (y-axis) */
+
+    /* align-items: stretch; */
+
+    height: 100vh;
+
+    /* justify-content: space-evenly; */
+
+
+    
+}
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="parent">
+        <div class="child">Child Number 1</div>
+        <div class="child">Child Number 2</div>
+        <div class="child">Child Number 3</div>
+    </div>
+
+
+
+</body>
+</html>

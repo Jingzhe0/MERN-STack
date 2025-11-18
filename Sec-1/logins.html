@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arimo", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(300deg, #628377, #d0f6f0);
+            background-image: linear-gradient(60deg, rgb(202, 187, 187), rgb(221, 135, 135)) ;
+            background-image: url("https://wallpapershome.com/images/pages/ico_h/27137.jpg");
+            background-size: cover;
+
+            background-image:linear-gradient(60deg, rgba(50, 140, 145, 0.325), rgba(93, 47, 47, 0.703)),
+                              url("https://wallpapershome.com/images/pages/ico_h/27137.jpg")  ;
+        }
+
+        .card {
+            width: 350px;
+            height: 64vh;
+            padding: 40px;
+            border-radius: 15px;
+            background: rgb(255, 255, 255);
+            backdrop-filter: blur(10px);
+            box-shadow: 3px 3px 5px 1px rgb(170, 167, 167);
+            color: black;
+            animation: fadeIn 0.7s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        .card:hover{
+            background-color: rgb(212, 206, 206);
+            border-image: linear-gradient(45deg,#ff0000,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff);
+        }
+
+
+        .form-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 60px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .text-input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .text-input:focus {
+            box-shadow: 0 0 5px rgba(135, 135, 135, 0.9);
+        }
+
+        .btn-submit {
+            background-color: rebeccapurple;
+            color: white;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #6e6b6b;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .link{
+            color: rebeccapurple;
+            text-decoration: none;
+            display: block;
+        }
+
+        .reset-link{
+            margin-bottom: 10px;
+            text-align: right
+        }
+
+        .signup-link{
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="card">
+        <h2 class="form-title">Login Form</h2>
+
+        <form>
+            
+
+            <label>Email Address</label>
+            <input type="email" class="text-input" placeholder="Enter your email">
+
+            <label>Password</label>
+            <input type="password" class="text-input" placeholder="Enter your password">
+
+            <a href="#" class="link reset-link">Forgot Password</a>
+
+            <button class="btn-submit">Submit</button>
+
+            <a href="#" class="link signup-link">Not Registerd Yet? Signup Now</a>
+        </form>
+    </div>
+
+</body>
+</html>
